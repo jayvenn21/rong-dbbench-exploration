@@ -1,0 +1,81 @@
+{
+  "checkpoint_helped": {
+    "task_id": "dev_mutation_0_line_21",
+    "question": "Insert 'Madison High School' into 'School Location Table' with values 'San Diego' for 'Location', '1980' for 'Date moved', and 'nearby junior high school' for 'Currently at this location'.",
+    "accepted_attempt": 2,
+    "attempts": [
+      {
+        "attempt": 1,
+        "validation_passed": false,
+        "restored": true,
+        "sql": "INSERT INTO `School Location Table` (`School`, `Location`, `Date moved`, `Currently at this location`) VALUES ('Wrong High School', 'Nowhere', '1900', 'bad row')"
+      },
+      {
+        "attempt": 2,
+        "validation_passed": true,
+        "restored": false,
+        "sql": "INSERT INTO `School Location Table` (`School`, `Location`, `Date moved`, `Currently at this location`)       VALUES ('Madison High School', 'San Diego', '1980', 'nearby junior high school')"
+      }
+    ]
+  },
+  "checkpoint_did_not_help": {
+    "task_id": "dev_mutation_0_line_21",
+    "question": "Insert 'Madison High School' into 'School Location Table' with values 'San Diego' for 'Location', '1980' for 'Date moved', and 'nearby junior high school' for 'Currently at this location'.",
+    "attempts": [
+      {
+        "attempt": 1,
+        "validation_passed": false,
+        "restored": true,
+        "sql": "INSERT INTO `School Location Table` (`School`, `Location`, `Date moved`, `Currently at this location`) VALUES ('Wrong High School', 'Nowhere', '1900', 'bad row')"
+      },
+      {
+        "attempt": 2,
+        "validation_passed": false,
+        "restored": true,
+        "sql": "INSERT INTO `School Location Table` (`School`, `Location`, `Date moved`, `Currently at this location`) VALUES ('Still Wrong High School', 'Elsewhere', '1901', 'bad retry')"
+      }
+    ]
+  },
+  "overhead_not_worth_it_candidates": [
+    {
+      "task_id": "dev_mutation_0_line_21",
+      "type": "INSERT",
+      "table": "School Location Table",
+      "linear_runtime": 0.08581129199592397,
+      "checkpoint_runtime": 0.16934670798946172,
+      "overhead_seconds": 0.08353541599353775
+    },
+    {
+      "task_id": "dev_mutation_1_line_22",
+      "type": "INSERT",
+      "table": "Football Standings",
+      "linear_runtime": 0.07672129198908806,
+      "checkpoint_runtime": 0.21615058300085366,
+      "overhead_seconds": 0.1394292910117656
+    },
+    {
+      "task_id": "dev_mutation_2_line_23",
+      "type": "INSERT",
+      "table": "Golf Tournament Winners",
+      "linear_runtime": 0.07733324996661395,
+      "checkpoint_runtime": 0.161598332982976,
+      "overhead_seconds": 0.08426508301636204
+    },
+    {
+      "task_id": "dev_mutation_3_line_24",
+      "type": "INSERT",
+      "table": "Olympic Medals",
+      "linear_runtime": 0.07161987503059208,
+      "checkpoint_runtime": 0.16369304090039805,
+      "overhead_seconds": 0.09207316586980596
+    },
+    {
+      "task_id": "dev_mutation_4_line_25",
+      "type": "INSERT",
+      "table": "Dallas Cowboys 1986 Season",
+      "linear_runtime": 0.06558616698021069,
+      "checkpoint_runtime": 0.14773862401489168,
+      "overhead_seconds": 0.08215245703468099
+    }
+  ]
+}

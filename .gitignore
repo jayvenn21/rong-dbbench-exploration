@@ -1,0 +1,19 @@
+.venv/
+__pycache__/
+*.py[cod]
+
+# Local/generated run artifacts
+tmp/
+logs/
+.DS_Store
+
+# LaTeX build products
+deliverable/*.aux
+deliverable/*.log
+deliverable/*.out
+deliverable/*.toc
+deliverable/*.synctex.gz
+
+# Local secrets/config
+.env
+.env.*

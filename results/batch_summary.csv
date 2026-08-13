@@ -1,0 +1,6 @@
+task_id,jsonl_line,type,table,linear_success,checkpoint_success,num_checkpoints,num_restores,runtime_linear,runtime_checkpoint,failure_reason
+dev_mutation_0_line_21,21,INSERT,School Location Table,True,True,1,0,0.08581129199592397,0.16934670798946172,
+dev_mutation_1_line_22,22,INSERT,Football Standings,True,True,1,0,0.07672129198908806,0.21615058300085366,
+dev_mutation_2_line_23,23,INSERT,Golf Tournament Winners,True,True,1,0,0.07733324996661395,0.161598332982976,
+dev_mutation_3_line_24,24,INSERT,Olympic Medals,True,True,1,0,0.07161987503059208,0.16369304090039805,
+dev_mutation_4_line_25,25,INSERT,Dallas Cowboys 1986 Season,True,True,1,0,0.06558616698021069,0.14773862401489168,

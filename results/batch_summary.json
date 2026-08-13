@@ -1,0 +1,287 @@
+[
+  {
+    "task_id": "dev_mutation_0_line_21",
+    "jsonl_line": 21,
+    "question": "Insert 'Madison High School' into 'School Location Table' with values 'San Diego' for 'Location', '1980' for 'Date moved', and 'nearby junior high school' for 'Currently at this location'.",
+    "type": "INSERT",
+    "schema_summary": {
+      "database": "dbbench",
+      "table": "School Location Table",
+      "columns": [
+        "School",
+        "Location",
+        "Date moved",
+        "Currently at this location"
+      ],
+      "initial_rows": 28
+    },
+    "reference_sql": "INSERT INTO `School Location Table` (`School`, `Location`, `Date moved`, `Currently at this location`)       VALUES ('Madison High School', 'San Diego', '1980', 'nearby junior high school')",
+    "linear": {
+      "success": true,
+      "runtime_seconds": 0.08581129199592397,
+      "affected_rows": 1,
+      "before_rows": 28,
+      "after_rows": 29,
+      "row_delta": 1,
+      "failure_reason": ""
+    },
+    "checkpoint": {
+      "success": true,
+      "runtime_seconds": 0.16934670798946172,
+      "checkpoint_runtime_seconds": 0.09718087501823902,
+      "action_runtime_seconds": 0.0721658329712227,
+      "restore_runtime_seconds": 0.0,
+      "num_checkpoints": 1,
+      "num_restores": 0,
+      "affected_rows": 1,
+      "before_rows": 28,
+      "after_rows": 29,
+      "row_delta": 1,
+      "validation_checks": [
+        {
+          "name": "sql_exit_code",
+          "passed": true,
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "name": "row_count_delta",
+          "passed": true,
+          "expected": 1,
+          "actual": 1
+        }
+      ],
+      "failure_reason": ""
+    }
+  },
+  {
+    "task_id": "dev_mutation_1_line_22",
+    "jsonl_line": 22,
+    "question": "Insert a new record into the 'Football Standings' table with the values of position 10, club 'FK Trakai', games played 18, wins 9, draws 2, losses 7, goals scored 29, goals conceded 24, and points 29.",
+    "type": "INSERT",
+    "schema_summary": {
+      "database": "dbbench",
+      "table": "Football Standings",
+      "columns": [
+        "Position",
+        "Club",
+        "Games played",
+        "Wins",
+        "Draws",
+        "Loses",
+        "Goals scored",
+        "Goals conceded",
+        "Points"
+      ],
+      "initial_rows": 19
+    },
+    "reference_sql": "INSERT INTO `Football Standings` (`Position`, `Club`, `Games played`, `Wins`, `Draws`, `Loses`, `Goals scored`, `Goals conceded`, `Points`) VALUES (10, 'FK Trakai', 18, 9, 2, 7, 29, 24, 29);",
+    "linear": {
+      "success": true,
+      "runtime_seconds": 0.07672129198908806,
+      "affected_rows": 1,
+      "before_rows": 19,
+      "after_rows": 20,
+      "row_delta": 1,
+      "failure_reason": ""
+    },
+    "checkpoint": {
+      "success": true,
+      "runtime_seconds": 0.21615058300085366,
+      "checkpoint_runtime_seconds": 0.08796370803611353,
+      "action_runtime_seconds": 0.12818687496474013,
+      "restore_runtime_seconds": 0.0,
+      "num_checkpoints": 1,
+      "num_restores": 0,
+      "affected_rows": 1,
+      "before_rows": 19,
+      "after_rows": 20,
+      "row_delta": 1,
+      "validation_checks": [
+        {
+          "name": "sql_exit_code",
+          "passed": true,
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "name": "row_count_delta",
+          "passed": true,
+          "expected": 1,
+          "actual": 1
+        }
+      ],
+      "failure_reason": ""
+    }
+  },
+  {
+    "task_id": "dev_mutation_2_line_23",
+    "jsonl_line": 23,
+    "question": "Insert the winners of Golf Tournament into the table 'Golf Tournament Winners' with the player name 'Bernhard Langer', country 'Germany', winning years '1985, 1993', total score '290' and 'To par' score of '+2'.",
+    "type": "INSERT",
+    "schema_summary": {
+      "database": "dbbench",
+      "table": "Golf Tournament Winners",
+      "columns": [
+        "Player",
+        "Country",
+        "Year(s) won",
+        "Total",
+        "To par"
+      ],
+      "initial_rows": 17
+    },
+    "reference_sql": "INSERT INTO `Golf Tournament Winners` (`Player`, `Country`, `Year(s) won`, `Total`, `To par`) VALUES ('Bernhard Langer', 'Germany', '1985, 1993', '290', '+2')",
+    "linear": {
+      "success": true,
+      "runtime_seconds": 0.07733324996661395,
+      "affected_rows": 1,
+      "before_rows": 17,
+      "after_rows": 18,
+      "row_delta": 1,
+      "failure_reason": ""
+    },
+    "checkpoint": {
+      "success": true,
+      "runtime_seconds": 0.161598332982976,
+      "checkpoint_runtime_seconds": 0.08230537496274337,
+      "action_runtime_seconds": 0.07929295802023262,
+      "restore_runtime_seconds": 0.0,
+      "num_checkpoints": 1,
+      "num_restores": 0,
+      "affected_rows": 1,
+      "before_rows": 17,
+      "after_rows": 18,
+      "row_delta": 1,
+      "validation_checks": [
+        {
+          "name": "sql_exit_code",
+          "passed": true,
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "name": "row_count_delta",
+          "passed": true,
+          "expected": 1,
+          "actual": 1
+        }
+      ],
+      "failure_reason": ""
+    }
+  },
+  {
+    "task_id": "dev_mutation_3_line_24",
+    "jsonl_line": 24,
+    "question": "Insert into table 'Olympic Medals' with 5 columns 'Rank', 'Gold', 'Silver', 'Bronze' and 'Total'. The values for column 'Rank' is '7', for column 'Gold' is '0', for column 'Silver' is '1', for column 'Bronze' is '0' and for column 'Total' is '1'.",
+    "type": "INSERT",
+    "schema_summary": {
+      "database": "dbbench",
+      "table": "Olympic Medals",
+      "columns": [
+        "Rank",
+        "Gold",
+        "Silver",
+        "Bronze",
+        "Total"
+      ],
+      "initial_rows": 17
+    },
+    "reference_sql": "INSERT INTO `Olympic Medals` (`Rank`, `Gold`, `Silver`, `Bronze`, `Total`) VALUES ('7', '0', '1', '0', '1')",
+    "linear": {
+      "success": true,
+      "runtime_seconds": 0.07161987503059208,
+      "affected_rows": 1,
+      "before_rows": 17,
+      "after_rows": 18,
+      "row_delta": 1,
+      "failure_reason": ""
+    },
+    "checkpoint": {
+      "success": true,
+      "runtime_seconds": 0.16369304090039805,
+      "checkpoint_runtime_seconds": 0.08544841594994068,
+      "action_runtime_seconds": 0.07824462495045736,
+      "restore_runtime_seconds": 0.0,
+      "num_checkpoints": 1,
+      "num_restores": 0,
+      "affected_rows": 1,
+      "before_rows": 17,
+      "after_rows": 18,
+      "row_delta": 1,
+      "validation_checks": [
+        {
+          "name": "sql_exit_code",
+          "passed": true,
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "name": "row_count_delta",
+          "passed": true,
+          "expected": 1,
+          "actual": 1
+        }
+      ],
+      "failure_reason": ""
+    }
+  },
+  {
+    "task_id": "dev_mutation_4_line_25",
+    "jsonl_line": 25,
+    "question": "The Dallas Cowboys 1986 Season INSERT INTO table contains data for Week 18, played on January 4, 1987 at Texas Stadium against the Atlanta Falcons resulting in a 27-20 win for the Cowboys. The game was attended by 62,129 people and has been documented in the NFL Recap under [18].",
+    "type": "INSERT",
+    "schema_summary": {
+      "database": "dbbench",
+      "table": "Dallas Cowboys 1986 Season",
+      "columns": [
+        "Week",
+        "Date",
+        "Opponent",
+        "Result",
+        "Game site",
+        "NFL Recap",
+        "Attendance"
+      ],
+      "initial_rows": 26
+    },
+    "reference_sql": "INSERT INTO `Dallas Cowboys 1986 Season` (`Week`, `Date`, `Opponent`, `Result`, `Game site`, `NFL Recap`, `Attendance`) VALUES ('18', 'January 4, 1987', 'Atlanta Falcons', 'W 27\u201320', 'Texas Stadium', '[18]', '62,129')",
+    "linear": {
+      "success": true,
+      "runtime_seconds": 0.06558616698021069,
+      "affected_rows": 1,
+      "before_rows": 26,
+      "after_rows": 27,
+      "row_delta": 1,
+      "failure_reason": ""
+    },
+    "checkpoint": {
+      "success": true,
+      "runtime_seconds": 0.14773862401489168,
+      "checkpoint_runtime_seconds": 0.07590583298588172,
+      "action_runtime_seconds": 0.07183279102900997,
+      "restore_runtime_seconds": 0.0,
+      "num_checkpoints": 1,
+      "num_restores": 0,
+      "affected_rows": 1,
+      "before_rows": 26,
+      "after_rows": 27,
+      "row_delta": 1,
+      "validation_checks": [
+        {
+          "name": "sql_exit_code",
+          "passed": true,
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "name": "row_count_delta",
+          "passed": true,
+          "expected": 1,
+          "actual": 1
+        }
+      ],
+      "failure_reason": ""
+    }
+  }
+]
