@@ -1,6 +1,6 @@
 # Rong DBBench Exploration
 
-Small harness for understanding DBBench modification tasks before building the agent.
+Small harness for comparing linear and checkpointed exploration on DBBench modification tasks.
 
 ## Step 3: Load One Task Database
 
